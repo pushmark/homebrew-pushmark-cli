@@ -5,21 +5,21 @@
 class Pushmark < Formula
   desc "Send push notifications to any device via simple CLI"
   homepage "https://github.com/pushmark/pushmark-cli"
-  version "1.0.4"
+  version "1.0.5"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/pushmark/pushmark-cli/releases/download/v1.0.4/pushmark_1.0.4_darwin_amd64.tar.gz"
-      sha256 "2d50fce5ca1de5ae056c48f2f1ab408b83010cad6d6421f79235c4730cbdb831"
+      url "https://github.com/pushmark/pushmark-cli/releases/download/v1.0.5/pushmark_1.0.5_darwin_amd64.tar.gz"
+      sha256 "302a86334403e47bc40b5156d20589b847abb140c370b3e7a76ccd5784e4bff7"
 
       def install
         bin.install "pushmark"
       end
     end
     on_arm do
-      url "https://github.com/pushmark/pushmark-cli/releases/download/v1.0.4/pushmark_1.0.4_darwin_arm64.tar.gz"
-      sha256 "895294cf7d33d203783186971368e40423937881553a8f08f67867568339443f"
+      url "https://github.com/pushmark/pushmark-cli/releases/download/v1.0.5/pushmark_1.0.5_darwin_arm64.tar.gz"
+      sha256 "fcc323a43c4f1f90420f9c03fdef4207c7b85df32b5f44a321047b9b9c849f5b"
 
       def install
         bin.install "pushmark"
@@ -30,8 +30,8 @@ class Pushmark < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pushmark/pushmark-cli/releases/download/v1.0.4/pushmark_1.0.4_linux_amd64.tar.gz"
-        sha256 "7af7b2f924100a56a89ab70f5a4d69c55ce2c575e0c98d2e10645bb3c0273bd1"
+        url "https://github.com/pushmark/pushmark-cli/releases/download/v1.0.5/pushmark_1.0.5_linux_amd64.tar.gz"
+        sha256 "524ddc30fd8649e367f693c9057104fbc5b102a2cd496d45810f3982c9cc6a1e"
 
         def install
           bin.install "pushmark"
@@ -40,8 +40,8 @@ class Pushmark < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pushmark/pushmark-cli/releases/download/v1.0.4/pushmark_1.0.4_linux_arm64.tar.gz"
-        sha256 "dab4a29fe64d0fd0085b9f9931c1e6219c4b5c24ed7a3c0f34b297d65d0420f3"
+        url "https://github.com/pushmark/pushmark-cli/releases/download/v1.0.5/pushmark_1.0.5_linux_arm64.tar.gz"
+        sha256 "c61788b40d970e191ddff3c0da80a9a1b58065bfddb9585bce0b7d725e75c27a"
 
         def install
           bin.install "pushmark"
